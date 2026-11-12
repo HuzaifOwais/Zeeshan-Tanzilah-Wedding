@@ -6,40 +6,40 @@ interface CalligraphyNameRevealProps {
   onComplete?: () => void;
 }
 
-// Cubic bezier path following natural cursive script strokes of "Tanzilah Fatema"
-const BRIDE_PATH =
-  "M 95.0,135.0 C 105.0,125.0 115.0,120.0 125.0,120.0 C 128.0,120.0 127.0,165.0 130.0,165.0 C 138.0,165.0 140.0,152.0 148.0,152.0 C 153.0,152.0 152.0,164.0 158.0,164.0 C 165.0,164.0 166.0,148.0 173.0,148.0 C 180.0,148.0 180.0,164.0 188.0,164.0 C 195.0,164.0 196.0,152.0 203.0,152.0 C 208.0,152.0 208.0,186.0 212.0,186.0 C 215.0,186.0 215.0,152.0 218.0,152.0 C 225.0,152.0 226.0,152.0 233.0,152.0 C 240.0,152.0 240.0,122.0 248.0,122.0 C 253.0,122.0 252.0,164.0 258.0,164.0 C 265.0,164.0 266.0,152.0 273.0,152.0 C 278.0,152.0 278.0,164.0 283.0,164.0 C 290.0,164.0 290.0,122.0 298.0,122.0 C 303.0,122.0 302.0,164.0 308.0,164.0 C 318.0,164.0 320.0,148.0 330.0,148.0 C 338.0,148.0 338.0,122.0 345.0,122.0 C 350.0,122.0 350.0,164.0 355.0,164.0 C 368.0,164.0 368.0,152.0 380.0,152.0 C 385.0,152.0 385.0,164.0 390.0,164.0 C 398.0,164.0 398.0,132.0 405.0,132.0 C 410.0,132.0 410.0,164.0 415.0,164.0 C 422.0,164.0 422.0,152.0 430.0,152.0 C 440.0,152.0 440.0,148.0 450.0,148.0 C 458.0,148.0 458.0,164.0 465.0,164.0 C 470.0,164.0 470.0,148.0 475.0,148.0 C 482.0,148.0 482.0,152.0 490.0,152.0 C 495.0,152.0 495.0,164.0 500.0,164.0 C 508.0,164.0 508.0,122.0 515.0,122.0 C 522.0,122.0 522.0,164.0 530.0,164.0 C 538.0,164.0 540.0,152.0 548.0,152.0";
+// Cubic bezier path following natural cursive script strokes of "Zeeshan Alam" (top position)
+const GROOM_PATH =
+  "M 130.0,125.0 C 148.0,125.0 152.0,125.0 170.0,125.0 C 165.0,125.0 165.0,160.0 160.0,160.0 C 175.0,160.0 175.0,160.0 190.0,160.0 C 195.0,160.0 195.0,152.0 200.0,152.0 C 205.0,152.0 205.0,162.0 210.0,162.0 C 215.0,162.0 215.0,152.0 220.0,152.0 C 225.0,152.0 225.0,162.0 230.0,162.0 C 235.0,162.0 235.0,152.0 240.0,152.0 C 245.0,152.0 245.0,162.0 250.0,162.0 C 258.0,162.0 258.0,118.0 265.0,118.0 C 270.0,118.0 270.0,162.0 275.0,162.0 C 283.0,162.0 283.0,152.0 290.0,152.0 C 295.0,152.0 295.0,162.0 300.0,162.0 C 308.0,162.0 308.0,152.0 315.0,152.0 C 320.0,152.0 320.0,162.0 325.0,162.0 C 333.0,162.0 333.0,138.0 340.0,138.0 C 348.0,138.0 348.0,118.0 355.0,118.0 C 360.0,118.0 360.0,162.0 365.0,162.0 C 373.0,162.0 373.0,145.0 380.0,145.0 C 388.0,145.0 388.0,118.0 395.0,118.0 C 400.0,118.0 400.0,162.0 405.0,162.0 C 413.0,162.0 413.0,152.0 420.0,152.0 C 425.0,152.0 425.0,162.0 430.0,162.0 C 435.0,162.0 435.0,152.0 440.0,152.0 C 448.0,152.0 448.0,162.0 455.0,162.0 C 463.0,162.0 463.0,152.0 470.0,152.0 C 478.0,152.0 480.0,158.0 488.0,158.0";
 
 // Cubic bezier path following decorative ampersand "&"
 const AMP_PATH =
   "M 265.0,245.0 C 272.5,245.0 272.5,218.0 280.0,218.0 C 287.5,218.0 287.5,212.0 295.0,212.0 C 300.0,212.0 300.0,228.0 305.0,228.0 C 297.5,228.0 297.5,245.0 290.0,245.0 C 297.5,245.0 297.5,256.0 305.0,256.0 C 318.0,256.0 318.0,238.0 332.0,238.0";
 
-// Cubic bezier path following natural cursive script strokes of "Zeeshan Alam"
-const GROOM_PATH =
-  "M 130.0,285.0 C 148.0,285.0 152.0,285.0 170.0,285.0 C 165.0,285.0 165.0,320.0 160.0,320.0 C 175.0,320.0 175.0,320.0 190.0,320.0 C 195.0,320.0 195.0,312.0 200.0,312.0 C 205.0,312.0 205.0,322.0 210.0,322.0 C 215.0,322.0 215.0,312.0 220.0,312.0 C 225.0,312.0 225.0,322.0 230.0,322.0 C 235.0,322.0 235.0,312.0 240.0,312.0 C 245.0,312.0 245.0,322.0 250.0,322.0 C 258.0,322.0 258.0,278.0 265.0,278.0 C 270.0,278.0 270.0,322.0 275.0,322.0 C 283.0,322.0 283.0,312.0 290.0,312.0 C 295.0,312.0 295.0,322.0 300.0,322.0 C 308.0,322.0 308.0,312.0 315.0,312.0 C 320.0,312.0 320.0,322.0 325.0,322.0 C 333.0,322.0 333.0,298.0 340.0,298.0 C 348.0,298.0 348.0,278.0 355.0,278.0 C 360.0,278.0 360.0,322.0 365.0,322.0 C 373.0,322.0 373.0,305.0 380.0,305.0 C 388.0,305.0 388.0,278.0 395.0,278.0 C 400.0,278.0 400.0,322.0 405.0,322.0 C 413.0,322.0 413.0,312.0 420.0,312.0 C 425.0,312.0 425.0,322.0 430.0,322.0 C 435.0,322.0 435.0,312.0 440.0,312.0 C 448.0,312.0 448.0,322.0 455.0,322.0 C 463.0,322.0 463.0,312.0 470.0,312.0 C 478.0,312.0 480.0,318.0 488.0,318.0";
+// Cubic bezier path following natural cursive script strokes of "Tanzilah Fatema" (bottom position)
+const BRIDE_PATH =
+  "M 95.0,295.0 C 105.0,285.0 115.0,280.0 125.0,280.0 C 128.0,280.0 127.0,325.0 130.0,325.0 C 138.0,325.0 140.0,312.0 148.0,312.0 C 153.0,312.0 152.0,324.0 158.0,324.0 C 165.0,324.0 166.0,308.0 173.0,308.0 C 180.0,308.0 180.0,324.0 188.0,324.0 C 195.0,324.0 196.0,312.0 203.0,312.0 C 208.0,312.0 208.0,346.0 212.0,346.0 C 215.0,346.0 215.0,312.0 218.0,312.0 C 225.0,312.0 226.0,312.0 233.0,312.0 C 240.0,312.0 240.0,282.0 248.0,282.0 C 253.0,282.0 252.0,324.0 258.0,324.0 C 265.0,324.0 266.0,312.0 273.0,312.0 C 278.0,312.0 278.0,324.0 283.0,324.0 C 290.0,324.0 290.0,282.0 298.0,282.0 C 303.0,282.0 302.0,324.0 308.0,324.0 C 318.0,324.0 320.0,308.0 330.0,308.0 C 338.0,308.0 338.0,282.0 345.0,282.0 C 350.0,282.0 350.0,324.0 355.0,324.0 C 368.0,324.0 368.0,312.0 380.0,312.0 C 385.0,312.0 385.0,324.0 390.0,324.0 C 398.0,324.0 398.0,292.0 405.0,292.0 C 410.0,292.0 410.0,324.0 415.0,324.0 C 422.0,324.0 422.0,312.0 430.0,312.0 C 440.0,308.0 440.0,308.0 450.0,308.0 C 458.0,308.0 458.0,324.0 465.0,324.0 C 470.0,324.0 470.0,308.0 475.0,308.0 C 482.0,308.0 482.0,312.0 490.0,312.0 C 495.0,312.0 495.0,324.0 500.0,324.0 C 508.0,324.0 508.0,282.0 515.0,282.0 C 522.0,282.0 522.0,324.0 530.0,324.0 C 538.0,324.0 540.0,312.0 548.0,312.0";
 
-const BRIDE_LEN = 850;
-const AMP_LEN = 260;
 const GROOM_LEN = 800;
+const AMP_LEN = 260;
+const BRIDE_LEN = 850;
 
 export function CalligraphyNameReveal({ active, onComplete }: CalligraphyNameRevealProps) {
   const reducedMotion = useReducedMotion();
 
   // Step-by-step sequential animation state:
-  // 1. "Tanzilah Fatema" appears -> stops and remains constant
+  // 1. "Zeeshan Alam" appears on top -> stops and remains constant
   // 2. "&" appears -> stops and remains constant
-  // 3. "Zeeshan Alam" appears -> stops and remains constant
+  // 3. "Tanzilah Fatema" appears below -> stops and remains constant
   // 4. All names stay permanently constant on screen (do not vanish)
-  const [brideStarted, setBrideStarted] = useState(false);
-  const [brideDone, setBrideDone] = useState(false);
-  const [brideShimmer, setBrideShimmer] = useState(false);
+  const [groomStarted, setGroomStarted] = useState(false);
+  const [groomDone, setGroomDone] = useState(false);
+  const [groomShimmer, setGroomShimmer] = useState(false);
 
   const [ampStarted, setAmpStarted] = useState(false);
   const [ampDone, setAmpDone] = useState(false);
 
-  const [groomStarted, setGroomStarted] = useState(false);
-  const [groomDone, setGroomDone] = useState(false);
-  const [groomShimmer, setGroomShimmer] = useState(false);
+  const [brideStarted, setBrideStarted] = useState(false);
+  const [brideDone, setBrideDone] = useState(false);
+  const [brideShimmer, setBrideShimmer] = useState(false);
 
   const [allDone, setAllDone] = useState(false);
 
@@ -55,29 +55,29 @@ export function CalligraphyNameReveal({ active, onComplete }: CalligraphyNameRev
     hasExecutedRef.current = true;
 
     if (reducedMotion) {
-      setBrideStarted(true);
-      setBrideDone(true);
-      setAmpStarted(true);
-      setAmpDone(true);
       setGroomStarted(true);
       setGroomDone(true);
+      setAmpStarted(true);
+      setAmpDone(true);
+      setBrideStarted(true);
+      setBrideDone(true);
       setAllDone(true);
       onCompleteRef.current?.();
       return;
     }
 
-    // Step 1: Tanzilah Fatema appears smoothly
+    // Step 1: Zeeshan Alam appears smoothly on top
     const t0 = setTimeout(() => {
-      setBrideStarted(true);
+      setGroomStarted(true);
     }, 60);
 
-    // Bride writing completes at 1.9s -> stops and remains constant
+    // Groom writing completes at 1.9s -> stops and remains constant
     const t1 = setTimeout(() => {
-      setBrideDone(true);
-      setBrideShimmer(true);
+      setGroomDone(true);
+      setGroomShimmer(true);
     }, 1900);
 
-    // Step 2: Ampersand "&" appears after bride stops
+    // Step 2: Ampersand "&" appears after groom stops
     const t2 = setTimeout(() => {
       setAmpStarted(true);
     }, 2350);
@@ -87,15 +87,15 @@ export function CalligraphyNameReveal({ active, onComplete }: CalligraphyNameRev
       setAmpDone(true);
     }, 3050);
 
-    // Step 3: Zeeshan Alam appears after ampersand stops
+    // Step 3: Tanzilah Fatema appears after ampersand stops
     const t4 = setTimeout(() => {
-      setGroomStarted(true);
+      setBrideStarted(true);
     }, 3500);
 
-    // Groom writing completes at 5.35s -> stops and remains constant
+    // Bride writing completes at 5.35s -> stops and remains constant
     const t5 = setTimeout(() => {
-      setGroomDone(true);
-      setGroomShimmer(true);
+      setBrideDone(true);
+      setBrideShimmer(true);
       setAllDone(true);
       onCompleteRef.current?.();
     }, 5350);
@@ -227,7 +227,7 @@ export function CalligraphyNameReveal({ active, onComplete }: CalligraphyNameRev
           filter="blur(26px)"
         />
 
-        {/* 1. BRIDE'S NAME: "Tanzilah Fatema" (Appears first, then stops and stays constant) */}
+        {/* 1. GROOM'S NAME: "Zeeshan Alam" (Appears first, then stops and stays constant) */}
         <g filter={allDone ? "url(#ambientGlowFilter)" : "url(#royalGlowFilter)"}>
           <text
             x="300"
@@ -236,26 +236,26 @@ export function CalligraphyNameReveal({ active, onComplete }: CalligraphyNameRev
             fontFamily="'Great Vibes', cursive"
             fontSize="56"
             fill="url(#champagneGoldGrad)"
-            mask={brideDone ? undefined : (brideStarted ? "url(#brideRevealMask)" : undefined)}
+            mask={groomDone ? undefined : (groomStarted ? "url(#groomRevealMask)" : undefined)}
             style={{
-              opacity: brideStarted || brideDone ? 1 : 0,
+              opacity: groomStarted || groomDone ? 1 : 0,
               transition: "opacity 0.2s ease-in",
             }}
           >
-            Tanzilah Fatema
+            Zeeshan Alam
           </text>
         </g>
 
-        {/* Bride Completion Shimmer Wave */}
-        {brideShimmer && !reducedMotion && (
+        {/* Groom Completion Shimmer Wave */}
+        {groomShimmer && !reducedMotion && (
           <motion.rect
-            x="95"
+            x="130"
             y="110"
             width="80"
             height="80"
             fill="url(#shimmerSweepGrad)"
-            initial={{ x: 90, opacity: 0 }}
-            animate={{ x: 510, opacity: [0, 0.7, 0] }}
+            initial={{ x: 120, opacity: 0 }}
+            animate={{ x: 480, opacity: [0, 0.7, 0] }}
             transition={{ duration: 0.65, ease: "easeOut" }}
           />
         )}
@@ -308,7 +308,7 @@ export function CalligraphyNameReveal({ active, onComplete }: CalligraphyNameRev
           />
         </g>
 
-        {/* 3. GROOM'S NAME: "Zeeshan Alam" (Appears third, then stops and stays constant) */}
+        {/* 3. BRIDE'S NAME: "Tanzilah Fatema" (Appears third, then stops and stays constant) */}
         <g filter={allDone ? "url(#ambientGlowFilter)" : "url(#royalGlowFilter)"}>
           <text
             x="300"
@@ -317,26 +317,26 @@ export function CalligraphyNameReveal({ active, onComplete }: CalligraphyNameRev
             fontFamily="'Great Vibes', cursive"
             fontSize="56"
             fill="url(#champagneGoldGrad)"
-            mask={groomDone ? undefined : (groomStarted ? "url(#groomRevealMask)" : undefined)}
+            mask={brideDone ? undefined : (brideStarted ? "url(#brideRevealMask)" : undefined)}
             style={{
-              opacity: groomStarted || groomDone ? 1 : 0,
+              opacity: brideStarted || brideDone ? 1 : 0,
               transition: "opacity 0.2s ease-in",
             }}
           >
-            Zeeshan Alam
+            Tanzilah Fatema
           </text>
         </g>
 
-        {/* Groom Completion Shimmer Wave */}
-        {groomShimmer && !reducedMotion && (
+        {/* Bride Completion Shimmer Wave */}
+        {brideShimmer && !reducedMotion && (
           <motion.rect
-            x="130"
+            x="95"
             y="270"
             width="80"
             height="80"
             fill="url(#shimmerSweepGrad)"
-            initial={{ x: 120, opacity: 0 }}
-            animate={{ x: 480, opacity: [0, 0.7, 0] }}
+            initial={{ x: 90, opacity: 0 }}
+            animate={{ x: 510, opacity: [0, 0.7, 0] }}
             transition={{ duration: 0.65, ease: "easeOut" }}
           />
         )}
