@@ -62,7 +62,7 @@ export const wedding = {
       ],
     },
   ],
-  honourableHosts: ["Naushad Alam", "Umar Awais", "Abuzar Awais", "All relatives and friends"],
+  honourableHosts: ["Naushad Alam", "Umar Awais", "Abuzar Awais", "Neyaz Akhter", "All relatives and friends"],
   compliments: {
     from: "Mrs. & Mr. Masud Alam",
     address: ["147/23C, Keshab Chandra Sen Street,", "Kolkata – 700009."],
