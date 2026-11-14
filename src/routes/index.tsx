@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Clock, MapPin, CalendarDays, Landmark, Moon, Users, Utensils, MessageCircle } from "lucide-react";
+import { Clock, MapPin, CalendarDays, Landmark, Moon, Users, Utensils, MessageCircle, ChevronDown } from "lucide-react";
 import { wedding } from "@/config/wedding";
 import { Opening } from "@/components/wedding/Opening";
 import { Countdown } from "@/components/wedding/Countdown";
@@ -119,6 +119,25 @@ function Index() {
               </div>
             </div>
           </motion.div>
+
+          {/* Scroll Down Indicator */}
+          <motion.a
+            href="#welcome"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("welcome")?.scrollIntoView({ behavior: "smooth" });
+            }}
+            initial={{ opacity: 0, y: -6 }}
+            animate={opened ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 1.4, duration: 0.8 }}
+            className="mt-6 sm:mt-8 flex flex-col items-center gap-1.5 text-gold-deep/80 hover:text-gold-deep transition-colors select-none group cursor-pointer z-10"
+            aria-label="Scroll down"
+          >
+            <span className="font-display text-[10px] sm:text-xs tracking-[0.25em] sm:tracking-[0.3em] text-ink/70 group-hover:text-gold-deep transition-colors uppercase">
+              Scroll Down
+            </span>
+            <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5 animate-bounce text-gold" />
+          </motion.a>
         </div>
       </section>
 
